@@ -76,12 +76,12 @@
         [self removeChild:bush];
         [_parallaxBackground addChild:bush z:0 parallaxRatio:_bushParallaxRatio positionOffset:offset];
     }
-//    
-//    for (CCNode *cloud in _clouds) {
-//        CGPoint offset = cloud.position;
-//        [self removeChild:cloud];
-//        [_parallaxBackground addChild:cloud z:0 parallaxRatio:_cloudParallaxRatio positionOffset:offset];
-//    }
+    
+    for (CCNode *cloud in _clouds) {
+        CGPoint offset = cloud.position;
+        [self removeChild:cloud];
+        [_parallaxBackground addChild:cloud z:0 parallaxRatio:_cloudParallaxRatio positionOffset:offset];
+    }
     
     for (CCNode *ground in _grounds) {
         // set collision txpe
